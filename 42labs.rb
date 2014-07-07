@@ -140,7 +140,7 @@ if !Rails.env.test?
 end
   CODE
 
-  initializer 'assets.rb', <<-CODE
+  append_file 'config/initializers/assets.rb', <<-CODE
 Rails.application.config.assets.precompile += %w( admins.js admins.css users.js users.css)
   CODE
 
