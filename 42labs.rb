@@ -59,8 +59,7 @@ puts
 say_status "RVM", "setting ruby version and gemset...\n", :yellow
 puts '-'*80, ''; sleep 0.25
 
-run "rvm --ruby-version use 2.1.1@#{app_name} --create"
-
+run "rvm 2.1.1 do rvm --ruby-version use 2.1.1@#{app_name} --create"
 
 
 # ----- Setting rvm hidden files ---------------------------------------------------------------------
